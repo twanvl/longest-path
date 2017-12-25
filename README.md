@@ -1,5 +1,8 @@
-Efficiently find the maximal weight Eulerian path in an undirected weighted graph.
+Efficiently find the longest Eulerian path in an undirected weighted graph.
 This is a path from a node i to node j, that uses each *edge* at most once.
+
+The algorithm is based on perfect matchings. Roughly: we remove edges so that all odd-degree nodes get even degree, then the remaining edges form an Eulerian path.
+
 
 Usage example:
 
